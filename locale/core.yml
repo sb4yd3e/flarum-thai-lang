@@ -10,8 +10,8 @@ core:
     # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
       developer_text: "ถ้าคุณคือผู้พัฒนา, คุณสามารถ <a>อ่านคู่มือ</a> เพื่อสร้างส่วนเสริม."
-      install_text: "บางเวลาคุณสามารถค้นหาส่วนเสริมได้ที่ <a>Flarum Community</a> และลงด้วยตัวเองผ่าน Composer."
-      temporary_text: "One day in the not-too-distant future, this dialog will allow you to add an extension to your forum with ease. We're building an ecosystem as we speak!"
+      install_text: "บางเวลาคุณสามารถค้นหาส่วนเสริมได้ที่ <a>Flarum Community</a> และติดตั้งด้วยตัวเองผ่าน Composer."
+      temporary_text: "วันหนึ่งในอนาคตที่ไม่ไกลเกินไปกล่องโต้ตอบนี้จะช่วยให้คุณสามารถเพิ่มส่วนขยายในฟอรัมของคุณได้อย่างง่ายดาย เรากำลังสร้างระบบนิเวศตามที่เราพูด!"
       title: เพิ่มส่วนเสริม
 
     # These translations are used in the Appearance page.
@@ -24,7 +24,7 @@ core:
       custom_header_heading: ปรับแต่งส่วนหัว
       custom_header_text: => core.ref.custom_header_text
       custom_styles_heading: ปรับแต่งสไล์
-      custom_styles_text: ปรับแต่งรูปแบบเว็บไซต์ของคุณโดยการเพิ่ม LESS/CSS เพื่อใช้งาน.
+      custom_styles_text: ปรับแต่งรูปแบบฟอรั่มของคุณโดยการเพิ่ม LESS/CSS เพื่อใช้งาน.
       dark_mode_label: โหมดกลางคืน
       edit_css_button: แก้ไข CSS
       edit_footer_button: => core.ref.custom_footer_title
@@ -33,23 +33,23 @@ core:
       favicon_heading: Favicon
       favicon_text: อัพโหลดรูปเพื่อเปลี่ยนการแสดงผล.
       logo_heading: โลโก้
-      logo_text: อัพโหลดรูปเพื่อแสดงบนส่วนหัวเว็บไซต์.
+      logo_text: อัพโหลดรูปเพื่อแสดงบนส่วนหัวฟอรั่ม.
       submit_button: => core.ref.save_changes
 
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: ภาษาเริ่มต้น
-      forum_description_heading: คำอธิบายเว็บไซต์
-      forum_description_text: ใส่ข้อความสั้นๆเพื่อธิบายให้ผู้ใช้เข้าใจเกี่ยวกับเว็บไซต์ และเป็นผลดีต่อ SEO
-      forum_title_heading: ชื่อเว็บไซต์
+      forum_description_heading: คำอธิบายฟอรั่ม
+      forum_description_text: ใส่ข้อความสั้นๆเพื่อธิบายให้ผู้ใช้เข้าใจเกี่ยวกับฟอรั่ม และเป็นผลดีต่อ SEO
+      forum_title_heading: ชื่อฟอรั่ม
       home_page_heading: หน้าแรก
-      home_page_text: Choose the page which users will first see when they visit your forum.
-      saved_message: Your changes were saved.
-      show_language_selector_label: Show language selector
+      home_page_text: เลือกหน้าฟอรั่มที่ต้องการแสดงอันดับแรกเมื่อผู้ใช้เข้าใช้งาน
+      saved_message: บันทึกการตั้งค่าสำเร็จ.
+      show_language_selector_label: แสดงตัวเลือกภาษา
       submit_button: => core.ref.save_changes
-      welcome_banner_heading: Welcome Banner
-      welcome_banner_text: Configure the text that displays in the banner on the All Discussions page. Use this to welcome guests to your forum.
+      welcome_banner_heading: ข้อความต้อนรับ
+      welcome_banner_text: แก้ไขข้อความที่ต้องการแสดงผลเมื่อผู้ใช้งานเข้าใช้ครั้งแรก ใช้งานสำหรับผู้ใช้ทั่วไป
 
     # These translations are used in the Dashboard page.
     dashboard:
@@ -58,9 +58,9 @@ core:
 
     # These translations are used in the Edit Custom CSS modal dialog.
     edit_css:
-      customize_text: "Customize your forum's appearance by adding your own LESS/CSS code to be applied on top of Flarum's <a>default styles</a>."
+      customize_text: "ปรับแต่งรูปลักษณ์ของฟอรั่มของคุณโดยเพิ่มรหัส LESS / CSS ของคุณเองเพื่อนำไปใช้ด้านบนของ <a> สไตล์เริ่มต้น </a> ของ Flarum"
       submit_button: => core.ref.save_changes
-      title: Edit Custom CSS
+      title: แก้ไข CSS
 
     # These translations are used in the Edit Custom Footer modal dialog.
     edit_footer:
@@ -71,15 +71,15 @@ core:
     # These translations are used in the Edit Group modal dialog.
     edit_group:
       color_label: => core.ref.color
-      delete_button: Delete Group
-      delete_confirmation: "Are you sure you want to delete this group? The group members will NOT be deleted."
-      icon_label: Icon
-      icon_text: "Enter the name of any <a>FontAwesome</a> icon class, <em>including</em> the <code>fas fa-</code> prefix."
-      name_label: Name
+      delete_button: ลบกลุ่ม
+      delete_confirmation: "คุณต้องการลบกลุ่มนี้ใช่หรือไม่? สมาชิกกลุ่มจะไม่ถูกลบ"
+      icon_label: ไอคอน
+      icon_text: "ใส่ชื่อไอคอน <a>FontAwesome</a>, <em>โดยต้องใส่</em>  <code>fas fa-</code> นำหน้าชื่อ"
+      name_label: ชื่อ
       plural_placeholder: Plural (e.g. Mods)
       singular_placeholder: Singular (e.g. Mod)
       submit_button: => core.ref.save_changes
-      title: Create Group
+      title: สร้างกลุ่ม
 
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
@@ -100,14 +100,14 @@ core:
       port_label: Port
       server_heading: SMTP Server
       submit_button: => core.ref.save_changes
-      text: Configure the SMTP settings and addresses your forum will use to send email.
+      text: ตั้งค่าเซิฟเวอร์เมลหากคุณต้องการให้รับบใช้งานการส่งอีเมล
       username_label: => core.ref.username
 
     # These translations are used in the Extensions page.
     extensions:
-      add_button: Add Extension
+      add_button: เพิ่มส่วนเสริม
       settings_button: => core.ref.settings
-      uninstall_button: Uninstall
+      uninstall_button: ยกเลิกการติดตั้ง
 
     # These translations are used in the session dropdown menu.
     header:
@@ -115,57 +115,57 @@ core:
 
     # These translations are used in the modal dialog displayed when loading extensions.
     loading:
-      title: Please Wait...
+      title: กรุณารอสักครู่...
 
     # These translations are used in the navigation bar.
     nav:
-      appearance_button: Appearance
-      appearance_text: "Customize your forum's colors, logos, and other variables."
-      basics_button: Basics
-      basics_text: "Set your forum title, language, and other basic settings."
-      dashboard_button: Dashboard
-      dashboard_text: Your forum at a glance.
+      appearance_button: รูปแบบ
+      appearance_text: "ปรับแต่งสีโลโก้และตัวแปรอื่น ๆ ในฟอรัมของคุณ"
+      basics_button: พื้นฐาน
+      basics_text: "ตั้งชื่อฟอรัมภาษาและการตั้งค่าพื้นฐานอื่น ๆ"
+      dashboard_button: แผงควบคุม
+      dashboard_text: ฟอรั่มของคุณได้อย่างรวดเร็ว
       email_button: => core.ref.email
-      email_text: "Configure your forum's email settings."
-      extensions_button: Extensions
-      extensions_text: Add extra functionality to your forum and make it your own.
-      permissions_button: Permissions
-      permissions_text: Configure who can see and do what.
+      email_text: "กำหนดการตั้งค่าอีเมลของฟอรัม"
+      extensions_button: ส่วนเสริม
+      extensions_text: เพิ่มฟังก์ชั่นพิเศษให้กับฟอรัมของคุณและทำให้เป็นของคุณเอง
+      permissions_button: สิทธิ์การใช้
+      permissions_text: กำหนดสิทธิ์สำหรับสมาชิกเพื่อดูหรือจัดการ
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_post_editing_label: Allow post editing
-      allow_renaming_label: Allow renaming
-      create_heading: Create
-      delete_discussions_forever_label: Delete discussions forever
-      delete_discussions_label: Delete discussions
-      delete_posts_forever_label: Delete posts forever
-      delete_posts_label: Delete posts
-      edit_posts_label: Edit posts
+      allow_post_editing_label: อนุญาตให้แก้ไขโพสต์
+      allow_renaming_label: อนุญาตให้แก้ไขชื่อ
+      create_heading: สร้าง
+      delete_discussions_forever_label: ลบกระทู้ถาวร
+      delete_discussions_label: ลบกระทู้
+      delete_posts_forever_label: ลบโพสถาวร
+      delete_posts_label: ลบโพส
+      edit_posts_label: แก้ไขโพส
       global_heading: Global
       moderate_heading: Moderate
-      new_group_button: New Group
+      new_group_button: สมาชิกใหม่
       participate_heading: Participate
-      read_heading: Read
-      rename_discussions_label: Rename discussions
-      reply_to_discussions_label: Reply to discussions
-      sign_up_label: Sign up
-      start_discussions_label: Start discussions
-      view_discussions_label: View discussions
-      view_last_seen_at_label: View user last seen time
-      view_post_ips_label: View post IP addresses
-      view_user_list_label: View user list
+      read_heading: อ่าน
+      rename_discussions_label: แก้ไขชื่อกระทู้
+      reply_to_discussions_label: ตอบกลับกระทู้
+      sign_up_label: สมัครสมาชิก
+      start_discussions_label: สร้างกระทู้
+      view_discussions_label: อ่านกระทู้
+      view_last_seen_at_label: ดูเวลาที่สมาชิกดูล่าสุด
+      view_post_ips_label: ดูที่อยู่ IP ของโพสต์
+      view_user_list_label: ดูรายชื่อสมาชิก
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
-      allow_indefinitely_button: Indefinitely
-      allow_some_minutes_button: "For {count} minute|For {count} minutes"
-      allow_ten_minutes_button: For 10 minutes
-      allow_until_reply_button: Until next reply
-      everyone_button: Everyone
+      allow_indefinitely_button: อย่างไม่มีกำหนด
+      allow_some_minutes_button: "เพื่อ {count} นาที|เพื่อ {count} นาที"
+      allow_ten_minutes_button: เป็นเวลา 10 นาที
+      allow_until_reply_button: จนกว่าจะตอบกลับต่อไป
+      everyone_button: ทุกคน
       members_button: => core.group.members
-      signup_closed_button: Closed
-      signup_open_button: Open
+      signup_closed_button: ปิด
+      signup_open_button: เปิด
 
     # These translations are used in the Settings modal dialog.
     settings:
@@ -174,7 +174,7 @@ core:
     # These translations are used in image upload buttons.
     upload_image:
       remove_button: => core.ref.remove
-      upload_button: Choose an Image...
+      upload_button: เลือกรูปภาพ...
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -184,31 +184,31 @@ core:
       confirm_password_placeholder: => core.ref.confirm_password
       confirmation_message: => core.ref.confirmation_email_sent
       dismiss_button: => core.ref.okay
-      incorrect_password_message: The password you entered is incorrect.
+      incorrect_password_message: รหัสผ่านไม่ถูกต้อง
       submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
     # These translations are used in the Change Password modal dialog.
     change_password:
-      send_button: Send Password Reset Email
-      text: Click the button below and check your email for a link to change your password.
+      send_button: ส่งรหัสผ่านใหม่ไปที่อีเมล
+      text: คลิกปุ่มด้านล่างและตรวจสอบลิงก์เพื่อเปลี่ยนรหัสผ่านของคุณทางอีเมล
       title: => core.ref.change_password
 
     # These translations are used by the composer controls.
     composer:
-      close_tooltip: Close
-      exit_full_screen_tooltip: Exit Full Screen
-      full_screen_tooltip: Full Screen
-      minimize_tooltip: Minimize
-      preview_tooltip: Preview
+      close_tooltip: ปิด
+      exit_full_screen_tooltip: ออกจากเต็มหน้าจอ
+      full_screen_tooltip: เต็มหน้าจอ
+      minimize_tooltip: ย่อขนาด
+      preview_tooltip: ดูตัวอย่าง
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      body_placeholder: Write a Post...
-      discard_confirmation: "You have not posted your discussion. Do you wish to discard it?"
-      submit_button: Post Discussion
+      body_placeholder: พิมพ์ข้อความของคุณ...
+      discard_confirmation: "คุณยังไม่ได้โพสต์การสนทนาของคุณ คุณต้องการยกเลิกหรือไม่"
+      submit_button: ตั้งกระทู้
       title: => core.ref.start_a_discussion
-      title_placeholder: Discussion Title
+      title_placeholder: หัวข้อกระทู้
 
     # These translations are used by the composer when editing a post.
     composer_edit:

@@ -9,13 +9,13 @@ flarum-flags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      flag_posts_label: Flag posts
-      view_flags_label: View flagged posts
+      flag_posts_label: โพสปักหมุด
+      view_flags_label: แสดงโพสที่ปักหมุด
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
-      guidelines_url_label: Community Guidelines URL
-      title: Flags Settings
+      guidelines_url_label: URL หลักเกณฑ์ของชุมชน
+      title: การตั้งค่าสถานะ
 
   # Translations in this namespace are used by the forum user interface.
   forum:
